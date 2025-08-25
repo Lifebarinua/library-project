@@ -1,0 +1,55 @@
+.library {
+  background-color: aqua;
+  color: blue;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+#newbook {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#bookContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.book {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Toggle button */
+.toggleBtn {
+  background-color: #4caf50;   /* green */
+  color: white;
+}
+
+.toggleBtn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Remove button */
+.removeBtn {
+  background-color: #f44336;   /* red */
+  color: white;
+}
+
+.removeBtn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}

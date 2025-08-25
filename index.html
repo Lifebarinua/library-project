@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOC</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+  <header class="library">
+    <h1>My Library</h1>
+    <button id="newbook">Add a new Book</button>
+  </header>
 
+  <!-- Where books will show -->
+  <main id="bookContainer"></main>
 
+  <!-- Dialog for adding new book -->
+  <dialog id="bookDialog">
+    <form method="dialog" id="bookForm">
+      <h2>Add a Book</h2>
 
+      <label>
+        Title: <br>
+        <input type="text" id="title" required>
+      </label>
+      <br>
 
+      <label>
+        Author: <br>
+        <input type="text" id="author" required>
+      </label>
+      <br>
 
-    <script src="./script.js"></script>
+      <label>
+        Pages: <br>
+        <input type="number" id="pages" required>
+      </label>
+      <br>
+
+      <label>
+        <input type="checkbox" id="read">
+        Have you read this book?
+      </label>
+      <br>
+
+      <button type="submit">Save</button>
+      <button type="button" id="closeDialog">Cancel</button>
+    </form>
+  </dialog>
+
+  <script src="./script.js"></script>
 </body>
 </html>
