@@ -6,7 +6,7 @@ const bookContainer = document.querySelector("#bookContainer");
 
 // --- Default books ---
 const defaultBooks = [
-  { title: "THE HOLY BIBLE King James Version", author: "The Holy Spirit", pages: 1396, read: true },
+  { title: "THE HOLY BIBLE<br>(King James Version)", author: "The Holy Spirit", pages: 1396, read: true },
   { title: "The Hobbit", author: "J.R.R. Tolkien", pages: 295, read: false },
   { title: "He Leads Me", author: "Bro Gbile Akanni", pages: 228, read: true },
   { title: "A Forest of Flowers", author: "Ken Saro Wiwa", pages: 281, read: true }
